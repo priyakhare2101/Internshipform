@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>Registration Form</title> 
+    <link rel="icon" type="image/x-icon" href="fevicon.jpeg">
+    <link rel="stylesheet" 
+          href="style.css"> 
+        
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+</head> 
+  
+<body style="background:#343A40"> 
+       <div class="wrapper">
+              <div class="image">
+                     <img src="sideimage.png">
+              </div>
+    <div class="main"> 
+
+       <div class="img">
+              <img src="logo.jpg" alt="logo">
+       </div>
+        <h1>Registration Form</h1> 
+        <form action="https://script.google.com/macros/s/AKfycby5qpL7DfZlJkyYX3_pGL67YdnNZbfgTpiQCvVeIGpSFQXL7QWZ3f3gtiXzuWyBcEnrXg/exec" name="google-sheet" method="post"> 
+            <label for="first">Full Name:</label> 
+            <input type="text" id="first" 
+                   name="name" 
+                   placeholder="Enter your Name" required> 
+  
+           
+  
+            <label for="email">Email Address:</label> 
+            <input type="email" id="email" 
+                   name="email" 
+                   placeholder="Enter your email" required> 
+  
+           
+  
+            <label for="mobile">Phone Number</label> 
+            <input type="text" id="mobile" 
+                   name="mobile" 
+                   placeholder="Enter your Mobile Number" required 
+                   maxlength="10"> 
+  
+               <label for="first">Collage Name:</label> 
+                   <input type="text" id="first" 
+                          name="collagename" 
+                          placeholder="Enter your Name" required> 
+         
+            <label for="internship">Internship Looking for:</label> 
+            <select id="internship" name="internship" required> 
+              
+                <option value="not selected">select an option</option>
+                <option value="Full stack Web Development">Full stack Web Development</option> 
+                <option value="Front-End Development">Front-End Development</option> 
+                <option value="Java Development">Java Development</option> 
+                <option value="Hardware and Networking">Hardware and Networking</option> 
+                
+            </select> 
+              <label for="here about us" >How did you here about us?</label>
+             <br>
+                     <div class="form-check">
+                           
+                                   
+                                   <label class="form-check-label" for="flexCheckDefault">
+                                     Whatsapp
+                                   </label>
+                                  <input class="form-check-input" type="checkbox" value="whatsapp" id="flexCheckDefault" name="aboutus"><br>
+                                   
+                                   <label class="form-check-label" for="flexCheckDefault">
+                                     Facebook
+                                   </label>
+                                   
+                                   <input class="form-check-input" type="checkbox" value="facebook" id="flexCheckDefault" name="aboutus"><br>
+                                   <label class="form-check-label" for="flexCheckDefault">
+                                   Instagram
+                                   </label>
+                                   
+                                   <input class="form-check-input" type="checkbox" value="instagram" id="flexCheckDefault" name="aboutus">
+                                   <label class="form-check-label" for="flexCheckDefault">
+                                     Telegram
+                                   </label>
+                                   <input class="form-check-input" type="checkbox" value="telegram" id="flexCheckDefault" name="aboutus">
+                                   <label class="form-check-label" for="flexCheckDefault">
+                                     LinkedIn
+                                   </label>
+                                   <input class="form-check-input" type="checkbox" value="linkedin" id="flexCheckDefault" name="aboutus">
+                                   
+                                 </div>
+                                
+                                   <label for="formcomments" class="form-label" >Comments..</label>
+                                   <textarea  id="exampleFormControlTextarea1" rows="5" name="comments"></textarea>
+                                 
+              <div class="wrap"> 
+                <button type="submit" onclick="solve()" name="submit" style="border-radius: 10px;"> 
+                  Submit 
+                  </button> 
+            </div> 
+        </form> 
+        </div>
+    </div> 
+    <!-- Footer -->
+   <br>
+       <div class="container-fluid">
+              
+         <div class="row">
+           <div class="col">
+            <img src="logo.jpg">
+              </div>
+              
+                     <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="widget no-box">
+                            <h5 class="widget-title" style="color: white;">Follow up<h5>
+                                        <a href="#"> <i class="fa fa-facebook"> </i> </a>
+                                        <a href="#"> <i class="fa fa-twitter"> </i> </a>
+                                        <a href="#"> <i class="fa fa-youtube"> </i> </a>
+                                        <a href="#"> <i class="fa fa-instagram"> </i> </a>
+                                        <a href="#"> <i class="fa fa-linkedin"> </i> </a>
+                            </div>
+                            </div>
+          
+           <div class="col order-1">
+                
+               <ul style="color: white;">
+                     <h5 style="color: white;">Explore-</h5>
+                 <li> <a href="#" style="color: white;">Full stack Web Development</a></li>
+                 <li> <a href="#" style="color: white;">Front-End Web Development</a></li>
+                 <li> <a href="#" style="color: white;">Java Development</a></li>
+                 <li> <a href="#" style="color: white;">Hardware and Networking</a></li>
+                
+               </ul>
+           </div>
+           
+         </div>
+         <div class="row mt-5">
+           <div class="col copyright">
+             <p class=""><small class="text-white-50">© 2024. All Rights| Design & Developed By Influencer Labs</small></p>
+           </div>
+         </div>
+       </div>
+         
+        <!-- Footer -->
+    <script>
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbzpB2rBSAMDkhZCqkXsyb1XRC65UfcvxKTpN0UUcIHjBqCwqIV4uar94RYq231xYlmjgw/exec'
+       const form = document.forms['google-sheet']
+  
+       form.addEventListener('submit', e => {
+         e.preventDefault()
+         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => alert("Thank you! your form is submitted successfully." ))
+              .then(() => {  window.location.reload(); })
+              .catch(error => console.error('Error!', error.message))
+       })
+  </script>
+    <script src="script.js"></script> 
+</body> 
+  
+</html>
